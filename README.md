@@ -12,7 +12,7 @@ $ docker-compose up
 $ docker-compose exec angular bash
 ```
 
-ライブラリのインストール
+ライブラリのインストール(コンテナ初回起動時)
 
 ```
 $ npm install
