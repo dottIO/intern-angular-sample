@@ -12,5 +12,14 @@ $ docker-compose up
 $ docker-compose exec angular bash
 ```
 
+ライブラリのインストール
+
+```
+$ npm install
+```
+
 Angular 起動
+
+```
 ng serve --host 0.0.0.0
+```
