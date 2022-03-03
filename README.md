@@ -23,3 +23,9 @@ Angular 起動
 ```
 ng serve --host 0.0.0.0
 ```
+
+イメージのビルドとコンテナの起動
+
+```
+docker-compose up --build
+```
