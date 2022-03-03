@@ -10,5 +10,11 @@ services:
       - 4200:4200
     volumes:
       - "./book-app:/projects"
-    command: sh -c "ng serve --host=0.0.0.0"
+    entrypoint:
+      - sh
+    command:
+      - -c
+      - |
+        npm install
+        ng serve --host 0.0.0.0
     tty: true
