@@ -1,0 +1,43 @@
+<div class="container">
+    <mat-card class="card">
+        <mat-card-title-group>
+            <mat-card-title>書籍登録</mat-card-title>
+        </mat-card-title-group>
+        <mat-card-content>
+            <form class="example-form">
+                <mat-form-field class="input" appearance="fill">
+                    <mat-label>書籍名</mat-label>
+                    <input matInput >
+                </mat-form-field>
+                <p>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>あらすじ</mat-label>
+                        <textarea matInput class="textarea"></textarea>
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field class="evaluation" appearance="fill">
+                        <mat-label>評価点</mat-label>
+                        <input matInput type="number" min="0" max="100">
+                    </mat-form-field>
+                </p>
+            </form>
+        </mat-card-content>
+        <mat-card-actions align="end" class="actions">
+            <button mat-button mat-raised-button color="primary">追加</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="book-card">
+        <mat-card-title>アンドロイドは電気羊の夢を見るか?</mat-card-title>
+        <mat-card-content>
+            <div class="content">
+                ああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            </div>
+            <span>評価: 90点</span>
+        </mat-card-content>
+        <mat-card-actions align="end" class="actions">
+            <button mat-button mat-raised-button color="warn">削除</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

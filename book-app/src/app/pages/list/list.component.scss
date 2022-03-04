@@ -1,0 +1,37 @@
+.container {
+  margin: 30px 40px 30px 40px;
+  .card {
+    width: 100%;
+    margin: 10px 0 40px 0;
+    padding: 20px;
+    .input {
+      width: 40%;
+    }
+    .textarea {
+      width: 100%;
+      height: 100px;
+    }
+    .evaluation {
+      width: 20%;
+    }
+    .actions {
+      margin-right: 0;
+    }
+  }
+
+  .book-card {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    .content {
+      margin: 5px 0 5px 0;
+    }
+    .actions {
+      margin-right: 0;
+    }
+  }
+
+  .log {
+    width: 30%;
+    margin: 40px 0 20px 0;
+  }
+}
