@@ -1,0 +1,39 @@
+.container {
+  margin: 30px 40px;
+  .form-card {
+    margin: 10px 0 40px 0;
+    padding: 20px;
+    .form-container {
+      max-width: 500px;
+      .full-width {
+        width: 100%;
+      }
+      .half-width {
+        width: 50%;
+      }
+      .detail {
+        .textarea {
+          height: 100px;
+        }
+      }
+    }
+    .actions {
+      margin-right: 0;
+    }
+  }
+
+  .book-card {
+    margin: 20px 0;
+    .content {
+      margin: 5px 0;
+    }
+    .actions {
+      margin-right: 0;
+    }
+  }
+
+  .log {
+    width: 30%;
+    margin: 40px 0 20px 0;
+  }
+}
