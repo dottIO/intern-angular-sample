@@ -21,7 +21,24 @@ export class ListComponent implements OnInit {
     },
   ];
 
+  public book: Book = this.defaultBook();
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  private defaultBook(): Book {
+    return {
+      name: '',
+      detail: '',
+      evaluation: 0,
+    };
+  }
+
+  public addBook(): void {
+    this.bookList.push(this.book);
+
+    // 入力フォームの初期化
+    this.book = this.defaultBook();
+  }
 }

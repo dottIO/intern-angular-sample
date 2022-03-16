@@ -8,21 +8,21 @@
         <div class="form-container">
           <mat-form-field class="name full-width" appearance="fill">
             <mat-label>書籍名</mat-label>
-            <input matInput>
+            <input matInput [(ngModel)]="book.name" name="name">
           </mat-form-field>
           <mat-form-field class="detail full-width" appearance="fill">
             <mat-label>あらすじ</mat-label>
-            <textarea matInput></textarea>
+            <textarea matInput [(ngModel)]="book.detail" name="detail"></textarea>
           </mat-form-field>
           <mat-form-field class="evaluation half-width" appearance="fill">
             <mat-label>評価点</mat-label>
-            <input matInput type="number" min="0" max="100">
+            <input matInput type="number" min="0" max="100" [(ngModel)]="book.evaluation" name="evaluation">
           </mat-form-field>
         </div>
       </form>
     </mat-card-content>
     <mat-card-actions align="end" class="actions">
-      <button mat-button mat-raised-button color="primary">追加</button>
+      <button mat-button mat-raised-button color="primary" (click)="addBook()">追加</button>
     </mat-card-actions>
   </mat-card>
 
