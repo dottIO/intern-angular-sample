@@ -27,7 +27,17 @@
   </mat-card>
 
   <div class="book-container">
-    <app-card *ngFor="let book of bookList" [book]="book"></app-card>
+    <ng-container *ngIf="bookList.length; then bookCard; else noBook;"></ng-container>
+
+    <ng-template #bookCard>
+      <ng-container *ngFor="let book of bookList">
+        <app-card [book]="book"></app-card>
+      </ng-container>
+    </ng-template>
+
+    <ng-template #noBook>
+      データがありません
+    </ng-template>
   </div>
 
 </div>
