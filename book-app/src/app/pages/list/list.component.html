@@ -27,30 +27,7 @@
   </mat-card>
 
   <div class="book-container">
-    <mat-card class="book-card">
-      <mat-card-title>アンドロイドは電気羊の夢を見るか?</mat-card-title>
-      <mat-card-content>
-        <div class="content">
-          ああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-        </div>
-        <span>評価: 90点</span>
-      </mat-card-content>
-      <mat-card-actions align="end" class="actions">
-        <button mat-button mat-raised-button color="warn">削除</button>
-      </mat-card-actions>
-    </mat-card>
-
-    <mat-card class="book-card">
-      <mat-card-title>アンドロイドは電気羊の夢を見るか?</mat-card-title>
-      <mat-card-content>
-        <div class="content">
-          ああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-        </div>
-        <span>評価: 90点</span>
-      </mat-card-content>
-      <mat-card-actions align="end" class="actions">
-        <button mat-button mat-raised-button color="warn">削除</button>
-      </mat-card-actions>
-    </mat-card>
+    <app-card *ngFor="let book of bookList" [book]="book"></app-card>
   </div>
+
 </div>

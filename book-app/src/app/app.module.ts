@@ -7,9 +7,10 @@ import { ListComponent } from './pages/list/list.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, ListComponent, ToolbarComponent],
+  declarations: [AppComponent, ListComponent, ToolbarComponent, CardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
