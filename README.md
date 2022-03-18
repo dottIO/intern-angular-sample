@@ -9,7 +9,7 @@ $ docker-compose up
 コンテナに入る
 
 ```
-$ docker-compose exec angular bash
+$ docker-compose exec book-app bash
 ```
 
 ライブラリのインストール(コンテナ初回起動時)
