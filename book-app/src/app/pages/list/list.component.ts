@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/types/types';
 
+import { MessageService } from '../../services/message.service';
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -23,7 +25,7 @@ export class ListComponent implements OnInit {
 
   public book: Book = this.defaultBook();
 
-  constructor() {}
+  constructor(private messageSvc: MessageService) {}
 
   ngOnInit(): void {}
 
@@ -36,8 +38,10 @@ export class ListComponent implements OnInit {
   }
 
   public addBook(): void {
+    const operation = '追加'
     this.bookList.push(this.book);
-
+    // 追加した書籍ログに表示
+    this.messageSvc.addLogData(this.book.name, operation);
     // 入力フォームの初期化
     this.book = this.defaultBook();
   }
