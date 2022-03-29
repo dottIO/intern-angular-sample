@@ -9,9 +9,10 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { CardComponent } from './components/card/card.component';
+import { MessageComponent } from './components/message/message.component';
 
 @NgModule({
-  declarations: [AppComponent, ListComponent, ToolbarComponent, CardComponent],
+  declarations: [AppComponent, ListComponent, ToolbarComponent, CardComponent, MessageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
